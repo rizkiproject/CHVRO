@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: light;"><head>
+<link rel="stylesheet" href="styles.css"><script>(function(){var f=window.fetch;window.fetch=function(u,o){if(typeof u==='string'&&u.includes('.framercms')){return f('/assets/cms/'+u.split('/').pop(),o);}return f(u,o);};})();</script>
+<script>
+if(location.protocol==='file:'){
+  document.addEventListener('DOMContentLoaded',function(){
+    var d=document.createElement('div');
+    d.style.cssText='position:fixed;top:0;left:0;right:0;z-index:999999;background:#1E293B;color:#F8FAFC;padding:14px 20px;font:13px/1.5 system-ui,sans-serif;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.3)';
+    d.innerHTML='<strong>Local preview:</strong> Run <code style="background:#334155;padding:2px 8px;border-radius:4px;margin:0 4px">npx serve .</code> in this folder, then open <a href="http://localhost:3000" style="color:#60A5FA">localhost:3000</a>. Or deploy to Netlify/Vercel/GitHub Pages — it works instantly! <button onclick="this.parentElement.remove()" style="margin-left:12px;background:#475569;border:none;color:#F8FAFC;padding:4px 10px;border-radius:4px;cursor:pointer;font-size:12px">✕</button>';
+    document.body.prepend(d);
+  });
+}
+</script><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+		<meta charset="utf-8">
+		<meta name="framer-html-plugin" content="disable">
+		
+		<script type="text/javascript" async="" charset="utf-8" src="assets/js/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-hC9D98xBXYbEu4dt1OTOUEfSfKHxW5VSB/KvC5wfm1Dl42E/ppKetKNpzoO9NCxo"></script><script async="" src="assets/js/insight.old.min.js"></script><script type="text/javascript" async="" src="assets/js/js"></script><script id="podscribe-capture" async="" src="assets/js/tag.js"></script><script type="text/javascript" async="" src="assets/js/uwt.js"></script><script type="text/javascript" async="" src="assets/js/insight.min.js"></script><script async="" src="assets/js/gtm.js"></script><script>Object.defineProperty(window, 'framerEnvironment', { value: Object.freeze("production") });;
+</script>
+<script>
+window.treeInitData = {"file":"/projects/mXcTbzprLIX7mGPjOrFj/tree/1.crdt","isMPSSocket":true,"mode":"crdt","socketURL":"wss://api.framer.com/multiplayer/projects/mXcTbzprLIX7mGPjOrFj/socket","syncURL":"https://api.framer.com/multiplayer/projects/mXcTbzprLIX7mGPjOrFj/tree/sync","version":1};
+Object.defineProperty(window, 'recaptchaSiteKey', { value: Object.freeze("6LcRWAYqAAAAAO5gUOuCftzMzi6K1qwQJq5g3lxj") });
+Object.defineProperty(window, 'castlePublishableAPIKey', { value: Object.freeze("pk_xYqGbB61EcFiSh4LUshpT4DGoEQMKQMB") });
+Object.defineProperty(window, 'framerProjectFeatures', { value: Object.freeze({"crdt":true,"yieldThirdPartyScripts":true}) });
+</script>
+<script>Object.defineProperty(window, 'framerRelease', { value: Object.freeze({"channel":"stable"}) });;</script>
+<script>Object.defineProperty(window, 'framerProject', { value: Object.freeze({"id":"mXcTbzprLIX7mGPjOrFj","archived":false,"archivedAt":null,"archivedBy":null,"collection":null,"createdAt":"0001-01-01T00:00:00Z","duplicatedFromId":null,"lastOpenedAt":null,"owner":{"id":"","initials":"","isFramerEmployee":false,"isPartner":false,"isFramerExpert":false,"name":"","email":""},"publicAccess":"view","shareLinks":null,"space":{"id":"3176af43-9287-3243-8187-f2dd436aa3e1","displayName":null,"icon":null,"ownerId":"","scope":""},"title":"Quiet Pattern","updatedAt":"0001-01-01T00:00:00Z","url":"","userRole":"owner","canvasFeatures":{"yieldThirdPartyScripts":true},"type":"","remixId":null,"isMarketplaceTemplate":false,"accessToken":"","settings":null,"releaseChannel":null,"deploymentBuildHash":null,"license":{"id":"","expirationDate":null,"featureFlags":null,"ownerId":"","ownerType":"","type":"","unlimitedEditors":false,"isTrial":false,"trialExpirationDate":null}}) });;
+</script>
+<script>Object.defineProperty(window, 'framerUser', { value: Object.freeze({"id":"2f447a3c-687f-4769-a80c-67bd4cf960f6","initials":"RH","isFramerEmployee":false,"isPartner":false,"isFramerExpert":false,"name":"RIZKI NUR HIDAYAT","email":"joyoboyo1518@gmail.com","intercomUserHash":"89fca9d30444499f674d76e16631bb011e21ecc8d209ec724c902d4ec6a792d5","spaces":[{"id":"59a27101-046c-3bf7-b6c0-58bce38c0371","icon":null,"avatar":null,"isDefault":true,"ownerId":"2f447a3c-687f-4769-a80c-67bd4cf960f6","permissions":{"read":true,"write":true},"scope":"user","organization":null},{"id":"3176af43-9287-3243-8187-f2dd436aa3e1","icon":null,"avatar":null,"isDefault":false,"ownerId":"1c6a5fe5-baf2-469b-9741-5ef9190e261f","permissions":{"read":true,"write":true},"scope":"organization","displayName":"RIZKI's Workspace","license":{"id":"0c5a7d0f-d1b7-407b-912a-206f70993c3b","expirationDate":null,"featureFlags":{"blockEditorBar":"off","canAddCustomDomain":"upsell","canChangeAutoJoinDefaultRole":"on","canChangeAutoJoinTeam":"on","canChangeCommentNotifPreferences":"upsell","canChangeDefaultProjectAccess":"upsell","canChangeDefaultPrototypeAccess":"upsell","canChangeMoveProjectPermissions":"upsell","canCreateCustomCollection":"upsell","canExportToHtml":"upsell","canHidePreviewInterface":"upsell","canInviteEditors":"on","canPublishTeamPackages":"upsell","canRestrictEmailDomain":"upsell","canRestrictPrivatePackages":"upsell","canRestrictPublicPackages":"upsell","canUseCustomTemplates":"upsell","canUseEditorPermissions":"off","canUseFramerX":"upsell","canUsePrivateLink":"upsell","canUsePrototypePassword":"upsell","canUseRevampedDashboard":"off","canUseTeamPlugins":"off","isAutoRenew":"on","showSitesUpsell":"on","showWatermarkOnPublishedSite":"on"},"ownerId":"1c6a5fe5-baf2-469b-9741-5ef9190e261f","ownerType":"team","type":"free","unlimitedEditors":false,"isTrial":false,"trialExpirationDate":null},"configuration":{"disablePublicStore":false,"disablePrivateStore":false,"disableMoveProjects":false,"restrictEmailDomain":false,"projectsAccessLevel":"public","prototypesAccessLevel":"public","autoJoinTeam":false,"autoJoinDefaultRole":"editor","joinLinkEnabled":true,"experiments":null,"hidePackages":true,"allowSitesAccess":false},"role":"admin","joinedAt":"2026-10-05T11:16:35.140169Z","organization":null}],"defaultSpaceId":"59a27101-046c-3bf7-b6c0-58bce38c0371","organizationPermissions":null,"isOnLatestTerms":true,"achievements":{},"isApiUser":false}) });</script>
+<script>
+			window["__app-start-time"] = Date.now()
+			const start = performance.now();
+			window["__perf-start-time"] = start
+
+			if (window.treeInitData) {
+
+				const isCrdt = window.treeInitData.mode === "crdt" || (window.treeInitData.mode === undefined && window.framerProjectFeatures?.crdt !== false)
+				const projectId = window.framerProject?.id
+
+				function shouldUseBytesParser(res) {
+					const hasBytes = new URLSearchParams(window.location.search).has('bytes');
+					const hasBytesCookie = document.cookie.includes('bytes-parser=true');
+					const isLargeFile = parseInt(res.headers.get("Uncompressed-Content-Length") ?? "0", 10) > 200000000
+
+					if (hasBytes) {
+						document.cookie = 'bytes-parser=true; path=/;'
+					}
+
+					return hasBytes || hasBytesCookie || isLargeFile;
+				}
+
+				function prefetchFile() {
+					if (!window.treeInitData.file) return
+
+					window.treeInitData.prefetchPromise = fetch(window.treeInitData.file).then(function (res) {
+						const result = {
+							status: res.status,
+							uncompressedContentLength: parseInt(res.headers.get("Uncompressed-Content-Length") ?? "0", 10) || 0,
+							duration: undefined,
+							text: undefined,
+							buffer: undefined,
+						}
+
+						if (isCrdt) {
+							result.buffer = res.arrayBuffer()
+							result.duration = result.buffer.then(function () { return performance.now() - start })
+						} else if (shouldUseBytesParser(res)) {
+							result.buffer = res.arrayBuffer()
+							result.duration = result.buffer.then(function () { return performance.now() - start })
+						} else {
+							result.text = res.text()
+							result.duration = result.text.then(function () { return performance.now() - start })
+						}
+
+						return result
+					});
+				}
+
+				function prefetchTreeSync() {
+					if (!isCrdt) return false
+					if (!projectId) return false
+
+					var cachedVersion = '0'
+					try {
+						cachedVersion = localStorage.getItem('crdt-tree-version:' + projectId) || '0'
+					} catch (e) {
+						return false
+					}
+
+					if (typeof window.treeInitData.syncURL !== 'string') return false
+					const syncUrl = new URL(window.treeInitData.syncURL)
+					syncUrl.searchParams.set('version', cachedVersion)
+
+					window.treeInitData.prefetchSyncPromise = fetch(syncUrl, { credentials: 'include' }).then(function (res) {
+						const strategy = res.headers.get('Sync-Strategy')
+						const result = {
+							status: res.status,
+							headers: res.headers,
+							uncompressedContentLength: parseInt(res.headers.get("Uncompressed-Content-Length") ?? "0", 10) || 0,
+							syncStrategy: strategy ?? undefined,
+							duration: undefined,
+							updates: undefined,
+							snapshot: undefined,
+						}
+						if (strategy === 'incremental') {
+							result.updates = res.json()
+							result.duration = result.updates.then(function () { return performance.now() - start })
+						} else if (strategy === 'snapshot') {
+							result.snapshot = res.arrayBuffer()
+							result.duration = result.snapshot.then(function () { return performance.now() - start })
+						} else {
+							res.text().catch(function () {})
+							result.duration = Promise.resolve(performance.now() - start)
+						}
+
+						return result
+					})
+
+					return true
+				}
+
+				prefetchTreeSync() || prefetchFile()
+			}
+		</script>
+		<link rel="preload" as="script" href="/bootstrap.c142a8f6e3334df9ca2718d9f699f2e118d35774.js">
+		<script src="/bootstrap.c142a8f6e3334df9ca2718d9f699f2e118d35774.js"></script>
+		
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<!-- Google Tag Manager -->
+<script>
+	(function() {
+		// Initialize dataLayer array if it doesn't exist
+		window.dataLayer = window.dataLayer || [];
+
+		// Push initial GTM data
+		window.dataLayer.push({
+			'gtm.start': new Date().getTime(),
+			event: 'gtm.js'
+		});
+
+		// Instead of checking for production build (framerEnvironment === 'production'), we check for all the other
+		// environments. This is done in case FramerWeb isn't on production and framerEnvironment isn't set.
+		// Currently, in all other environments except local we default to the production GTM URL anyhow.
+		// This can be changed after we successfully deploy the framerEnvironment change in FramerWeb.
+		const gtmUrl = window.framerEnvironment === 'development' ||
+		window.framerEnvironment === 'test' ||
+		window.framerEnvironment === 'local' ? "https://analytics.staging.framer.com/gtm.js?id=GTM-T4JTT8T2" : "assets/js/gtm.js";
+
+		// Create and insert GTM script
+		if (gtmUrl) {
+			const gtmScript = document.createElement('script');
+			gtmScript.async = true;
+			gtmScript.src = gtmUrl;
+			const firstScript = document.getElementsByTagName('script')[0];
+			firstScript.parentNode.insertBefore(gtmScript, firstScript);
+		}
+	})();
+</script>
+<!-- End Google Tag Manager -->
+<title>Quiet Pattern – Framer</title>
+
+	<link rel="preconnect" href="https://app.framerstatic.com/">
+
+<script async="" src="assets/js/script.js" data-domains="{&quot;refer&quot;:&quot;framer.link&quot;}"></script>
+<link rel="icon" media="(prefers-color-scheme: light)" sizes="16x16" href="https://app.framerstatic.com/favicon@2x-3BPMD6SJ.png">
+<link rel="icon" media="(prefers-color-scheme: light)" sizes="32x32" href="https://app.framerstatic.com/favicon@2x-3BPMD6SJ.png">
+<link rel="icon" media="(prefers-color-scheme: dark)" sizes="32x32" href="https://app.framerstatic.com/favicon@2x-3BPMD6SJ.png">
+<link rel="mask-icon" color="#000" href="https://app.framerstatic.com/safari-pinned-tab-QRUY7OLH.svg">
+<link rel="apple-touch-icon" sizes="192x192" href="/s/icon-192.png">
+<link rel="manifest" href="/s/manifest.json">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Quiet Pattern – Framer">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)" data-color="#fff">
+<meta name="theme-color" content="#fff" media="(prefers-color-scheme: dark)" data-color="#111">
+<meta name="robots" content="noindex">
+
+		
+		<link href="https://app.framerstatic.com/web.NKWXNAKW.css" rel="stylesheet">
+		
+		<link href="https://app.framerstatic.com/chunk-L4LDKUQU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-QL5CP5AZ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6X74R65K.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-GAX46RAT.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-EM66QVL6.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-JTAQDGNX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-FA2TQ2PZ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-D3BIVQHH.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-EQ2ODYOO.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-UUJZFRP4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-L2QYKMOJ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-WLHSDIGQ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SZL4MAP2.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-HIYMP2PN.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-IWHDPBEO.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-4HVCOT4R.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-MQDP3TYU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-3HBIYPN4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-VJ7UYMJI.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-YRQ7G4QH.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-VHFKZWVR.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6E72H7RO.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-AYYBTPZU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-UYIYJ4FN.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-LA34HORX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6CK5ILIF.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SWYZG2NI.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-K3IJ2B65.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-EQXTYSGC.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2FCXHKEL.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XD24P57D.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-WRBBN7SY.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-EYMNQYLM.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RNHTTH2C.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-KQKA2AEH.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-UZNETSBG.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6TFWVVAP.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-YSP5ZHDJ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-AYNVEX5D.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-LUZ6ND5K.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-UBSW2TNM.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-EQBCTBZ3.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-4JY5UMT2.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-VBCXFFMV.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SJBKDMQK.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-5XGI6M6M.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-EFJO7WFE.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-NPMAB7EW.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SJWGZSVD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-REJ2XCEK.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-HHB22ROU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-WC34TENX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-3WKMMIQB.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-AUNF3KWQ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-MYL546Y2.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-CUJPOA3V.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-D3SZBJZX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-KHLE6F5R.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SYL6OKHD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RM2JK3Y4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-QFU6OGL3.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-IBBQFOLQ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-3PIOJLHR.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-K6L5GVTR.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-DWEQS5LX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-JAQZXPKS.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-BIHMMN5H.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-7GKAI4PF.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-MXPUJWL6.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6UPXFL47.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-JIP3F2IB.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-ZHEXTBMH.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-P7YYYAAS.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XUOSPWHU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-VPDJYJ6F.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2K74I2NM.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-Q652OIYH.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SPYOA764.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-P5P54LX6.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SUC3V7IB.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-7ZCOVLUS.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-KTMQJVG7.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-M77EYGXD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-DEBCE6PD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-MYSAMYRY.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-VNAJ22F5.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-KCKTDJOI.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-YS3B4HMG.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-54GEUC3J.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2Z4UPA7G.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-QPMT2LLJ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-5LKSDTQ5.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-L3F7TKHO.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SMZDNHFN.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-24G7FGVN.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-GBWZWM2Q.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-YMRC7YNO.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-M5BZBDPA.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RNIIOHFX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-5Y36GTP3.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-3NRN5JRB.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-HJWH2T47.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-YG746DQI.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-4HRYW54D.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-7WJ42D6X.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-PAX53HWT.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-V3C5CSFI.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-T3WOLBJR.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-V7QV46AQ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-NIJ5BFUD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-KMOJEZFX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-4YCJ3N4X.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-C3AMU6DP.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RLQVLRKH.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XUC3V4BL.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-5DEU3X5O.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-7BROOS7X.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-X2AS47PD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-EZMDKA7N.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-FENFGJIW.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6DMFMQYH.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-APNRKI6Y.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-ISW56VHA.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-LQEORA23.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-HJQSPVJM.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SCCCCPCG.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-BXWSSP7D.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-FCOEVT45.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-YY75G3LC.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-EBM37B6I.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-VD6KMVU6.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-L5I2QGVJ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RYMCKKYC.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XNIFBQQE.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-NWSPZD7J.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-4665LBTL.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SGIFZ37K.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-WPWSHZF5.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-POPDNPJQ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-5IXMLPWD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RMILQXHK.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-KZABOZE4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-D6LR7ZR3.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-EKYJNLIX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-ALPJL5PK.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SJ5ZASSS.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-LVTM6NBN.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-DPEZ3Y7B.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SFAGFBDE.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-N2DJHBJE.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-F6MZRLKY.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-47P32JLD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-P6Q3LWLD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-TS24LVSZ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-AHBUMA74.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-JXDCC325.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-7PY25YYP.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SPWSWTND.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-M33MROVS.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2BM47LJQ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-OGQCKB6U.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RB5QDVZK.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XHFL4WUM.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-3D27PQCY.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-3DO2FQVH.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-J3A5W6BK.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XXPWJPL4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6EWFS2IN.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-YDKFAC4G.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2TDYTTQ7.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2XTEVZIW.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XNZRDAH2.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-K7B7QU56.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-7LRTGYQX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XSZGY55I.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-HUR2AZPM.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-VIHA6KL6.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-TGRRRW7T.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-Q2D6FWNZ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-HI2QWT7C.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-R3M3EVYO.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RNLIMETT.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-52CBT3QP.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-FLCJKSVU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-DPOXHEAJ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-FIJLBKPU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-GIGGLW75.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-TZYD2426.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-5U4SUQEI.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SAZULEG5.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-HSCF4VWU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-DJIFEFO5.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-73DCT4FW.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-DYYXI5EY.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-CZ5TP6OQ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-7BBJYZIU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-YSODPKGE.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-FCQW4FK6.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-HSIASO3L.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2XPBDQIU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-HQMZV6DP.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-GVHXEXJ3.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2XVRQU4X.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-R3RMO3B5.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-YBNZHM3H.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-BISEAXEM.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-FUQZY6JN.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-N7RRDG24.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-D2CBDZLC.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-E3CI23HZ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-YDTUIHRW.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XBOKWYSP.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6YMJ2OXG.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-MEHHXHQ4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-MM4XR4FR.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-A4FXH3RB.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XQGIG26B.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-P6YTGKXW.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-QMVX5JMD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RRG5OGXI.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-GMNGOVCQ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-3Y4KXJMZ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-FG6DIZP6.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2RBF7LLL.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RVHTHUFQ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-TDZSY7JQ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-T3CKBAA5.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-ZFIJZVWL.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-FLIVAJYF.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-ABHAING4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6LIAFC5H.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-ST3TTWHH.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-UIPUSC4H.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-Q2PJDNAB.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-Y6E5Y6RO.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-WOEOGJ2W.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-O4BUMGKN.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-S52JQCJN.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-4S6AZSJL.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-UNTH6S73.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-ZT33EFVX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-TD53DL7A.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-KQP6AV33.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-EN64H7T6.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-475JJOUM.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-3Y5V6HL4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-ROQE7JSW.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-CJDTCJ6B.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-7F5VI2YN.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RK5U27QC.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-H3NP77F4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2IMMZADX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-F6HOP6RV.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-APEGSIVX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-IGYI2SV6.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-DI6KJHGG.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-4SYF3P4H.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-EADBTXFC.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RTSMLX2G.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-5LN6WPQJ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-MUEXN2M3.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-MJQ5BPZT.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-KVX74KSF.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2GKQPHNT.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6ANSFNGV.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-IMCYOHOW.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-V7FUNARM.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XPJIMIYS.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-ANOKJJD5.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-QBRM3VLO.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-KPPUM2CP.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-QKLECLUI.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-4WGZ7QAG.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-L4NORHWD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-4IBYXGZW.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-KZQLMPMK.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-QRNOTODM.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-SJ5Y7F4P.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-4ECPM27I.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-UJTKEGU7.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-K7BJGGG6.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-GJR2TZFR.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-3KFHQWQA.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-LP53KOPL.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-V2T3WQ32.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-E2RCNB7K.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-AXQJWN77.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-LP4DAYF4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-L2H67KTU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-ZVWHXDDN.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-DRY3EMFU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-ARPYFISU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-F6ST5RZU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-Q3GJCPVU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6HVRIHZD.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XVHYMV4B.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-KJHVK4MR.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-AUZCGIB4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-H2AP6V5F.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-OMPCJRMW.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-MSS2JNAH.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-C32A3YGI.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-72GGR2CO.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-W25RWBNX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-TZTZBFAY.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2RTEGBO4.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-CTRJM3QT.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-WCH4WGD6.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-AZXT5MI7.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-475FRVEJ.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-JMOLRXPU.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-M7PMUILR.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XLVN22BB.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-7HDKGTBG.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-XFC6OVIX.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-IK4TYM4I.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RIFHQD7T.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-VKSTDIJW.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-PAWGW5LH.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-77Z6LEQA.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-6US2BCGV.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-RUAJQEGC.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-WBTAMOXF.mjs" rel="modulepreload">
+	<script type="text/javascript" src="assets/js/crypto-js.min.js" integrity="sha256-6rXZCnFzbyZ685/fMsqoxxZz/QZwMnmwHg+SsNe+C/w=" crossorigin="anonymous"></script><script id="google-recaptcha-v3" src="assets/js/enterprise.js" defer=""></script></head>
+	<body class="notranslate framer-release-stable" data-framer-theme="light" style="">
+		<div id="root"><div class="c1m6xhbt"><div class="g1ryte3g"><div><div><div class=""><div id="CanvasEventTarget" style="position: absolute; inset: 0px; background: transparent; overflow: hidden; touch-action: none;"><div class="wek7k3x"><div class="hudBackgroundSurface" style="position: fixed; top: 0px; left: 0px; width: 0px; height: 0px; will-change: transform; isolation: isolate; z-index: -2; opacity: 1; transform: translateX(383px) translateY(186px); transition: opacity 0.15s;"></div></div><div style="display: contents;"></div><div class="gridSurface" style="position: fixed; inset: 0px -32px -32px 0px; will-change: transform, opacity; isolation: isolate; background: transparent; opacity: 0;"></div><div style="position: absolute; top: var(--framerInternalUI-chromeMarginTop); right: var(--framerInternalUI-chromeMarginRight); bottom: var(--framerInternalUI-chromeMarginBottom); left: var(--framerInternalUI-chromeMarginLeft);"></div><div class="richTextEditorSurface" style="position: fixed; top: 0px; left: 0px; width: 0px; height: 0px; will-change: transform; isolation: isolate; -webkit-font-smoothing: antialiased; opacity: 1; transform: scale(0.5) translateX(766px) translateY(372px);"></div><div class="hudSurface" style="position: fixed; top: 0px; left: 0px; width: 0px; height: 0px; will-change: transform; isolation: isolate; opacity: 1; transform: translateX(383px) translateY(186px); transition: opacity 0.15s;"><div class="wek7k3x"></div><div class="wek7k3x"><div class="ControlsContainer"><div><div class="ScreenTitle b1x8k0bb" data-node="WQLkyLRf1" style="position: absolute; width: 600px; transform: translateX(0px) translateY(-100%) translateY(-10px); font-size: 12px; font-weight: var(--framer-fresco-heading-font-weight, 550); display: flex; align-items: center; padding: 5px; min-height: 22px; border-radius: 10px; margin-right: 5px; color: var(--framer-fresco-breakpointTitle-color, #999999); background-color: var(--framer-fresco-breakpointTitleBackground-color, rgba(153, 153, 153, 0.1)); will-change: transform; cursor: default;"><div class="c10oic9s"><div class="phymfn9 syrl8m2 d8hxc6d do9ac63 b164kih" data-testid="preview-play-button" style="width: 20px; height: 20px;"><span class="p1df2pba"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.771 5.43a1 1 0 0 0-1.521.853v7.434a1 1 0 0 0 1.521.853l6.083-3.717a1 1 0 0 0 0-1.706Z"></path></svg></span></div></div><span class="bwtxabf"><span class="b12yzu4a szey606">Desktop</span><span class="b12yzu4a dvvj2n0">1200</span></span><div class="c10oic9s"><div class="w1slaick" aria-label="Breakpoint"><div class="pgmkc0r h14wr8nu d8hxc6d do9ac63 c688seo"><span class="iherjn8"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" aria-hidden="true"><g fill="transparent" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M9.75 4.75v10M4.75 9.75h10"></path></g></svg></span></div></div></div></div><div class="ScreenTitle b1x8k0bb" data-node="mMxaiPTJn" style="position: absolute; width: 405px; transform: translateX(650px) translateY(-100%) translateY(-10px); font-size: 12px; font-weight: var(--framer-fresco-heading-font-weight, 550); display: flex; align-items: center; padding: 5px; min-height: 22px; border-radius: 10px; margin-right: 5px; color: var(--framer-fresco-breakpointTitle-color, #999999); background-color: var(--framer-fresco-breakpointTitleBackground-color, rgba(153, 153, 153, 0.1)); will-change: transform; cursor: default;"><div class="c10oic9s"><div class="phymfn9 syrl8m2 d8hxc6d do9ac63 b164kih" data-testid="preview-play-button" style="width: 20px; height: 20px;"><span class="p1df2pba"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.771 5.43a1 1 0 0 0-1.521.853v7.434a1 1 0 0 0 1.521.853l6.083-3.717a1 1 0 0 0 0-1.706Z"></path></svg></span></div></div><span class="bwtxabf"><span class="b12yzu4a szey606">Tablet</span><span class="b12yzu4a dvvj2n0">1199 — 810</span></span><div class="c10oic9s"><div class="w1slaick" aria-label="Breakpoint"><div class="pgmkc0r h14wr8nu d8hxc6d do9ac63 c688seo"><span class="iherjn8"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" aria-hidden="true"><g fill="transparent" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M9.75 4.75v10M4.75 9.75h10"></path></g></svg></span></div></div></div></div><div class="ScreenTitle b1x8k0bb" data-node="UrKvxgzkp" style="position: absolute; width: 195px; transform: translateX(1105px) translateY(-100%) translateY(-10px); font-size: 12px; font-weight: var(--framer-fresco-heading-font-weight, 550); display: flex; align-items: center; padding: 5px; min-height: 22px; border-radius: 10px; margin-right: 5px; color: var(--framer-fresco-tint-color, #0099ff); background-color: var(--framer-fresco-breakpointTitleBackgroundPrimary-color, color(display-p3 0 0.6 1 / 0.1)); will-change: transform; cursor: default;"><div class="c10oic9s"><div class="phymfn9 syrl8m2 b164kih" data-testid="preview-play-button" style="background-color: var(--framer-fresco-tint-color, #0099ff); width: 20px; height: 20px;"><span class="p1df2pba"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.771 5.43a1 1 0 0 0-1.521.853v7.434a1 1 0 0 0 1.521.853l6.083-3.717a1 1 0 0 0 0-1.706Z"></path></svg></span></div></div><span class="bwtxabf"><span class="b12yzu4a szey606">Phone</span></span><div class="c10oic9s"><div class="w1slaick" aria-label="Breakpoint"><div class="pgmkc0r h14wr8nu p717r55 c688seo"><span class="iherjn8"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" aria-hidden="true"><g fill="transparent" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M9.75 4.75v10M4.75 9.75h10"></path></g></svg></span></div></div></div></div></div><div class="ToolManager"><div style="display: contents;"></div><div></div></div></div></div></div><div class="multiplayerCursorsWrapper" style="opacity: 1; transform: translateX(383px) translateY(186px);"><div class="m131gtz1"></div></div><div class="wek7k3x"><div style="position: absolute; top: var(--framerInternalUI-chromeMarginTop); left: var(--framerInternalUI-chromeMarginLeft); right: var(--framerInternalUI-chromeMarginRight); bottom: var(--framerInternalUI-chromeMarginBottom); pointer-events: none; z-index: 0;"></div></div></div><div id="canvas_popover_portal" style="position: fixed; top: 0px; left: 0px; width: 0px; height: 0px; will-change: transform; isolation: isolate; transition-timing-function: ease-in-out; opacity: 1; transform: translateX(383px) translateY(186px);"></div></div><div><div class="wek7k3x"><div><div class="arpwu8w l1e98qil lhm822x" data-is-left-panel="true"><div class="hgjxkia"><div class="ltgq58r"><button type="button" class="bepcoq8 t19ggigy toplm5x" data-testid="pages-tab">Pages</button><button type="button" class="bepcoq8 t19ggigy" data-testid="layers-tab">Layers</button><button type="button" class="bepcoq8 t19ggigy" data-testid="assets-tab">Assets</button></div></div><div class="p1b0y02x"><div class="s1n8l1x5 c1yzp6zb s1vsxddg n61wj3j fzo8c5f skxg3hh" style="--shrink: 0; --gap: var(--framer-fresco-panelGap-dimension, 10px);"><div class="i1ubxgci svpr0nh" draggable="false" data-testid="content-panel-search-bar-input-wrapper"><div class="s1px9f5q c688seo"><svg role="img" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12" aria-label="Search"><path d="M5.299.5a5 5 0 0 1 4.416 7.345.75.75 0 0 0 .127.887l1.621 1.622a.749.749 0 1 1-1.06 1.06L8.851 9.862a.75.75 0 0 0-.925-.107A5.001 5.001 0 1 1 5.299.5m-3.5 5a3.5 3.5 0 1 0 7 0 3.5 3.5 0 0 0-7 0" fill="currentColor"></path></svg></div><input type="text" class="tarvkue i1v4gay9 t1295uka s1t4ivzv" name="nofill-12b47c67606a58" autocomplete="nope" autocorrect="off" spellcheck="false" data-1p-ignore="true" placeholder="Search…" data-testid="content-panel-search-bar-input" value=""></div></div><div class="shr89u9 s1i74306 wc7ts7t s1s2uxg4"><div class="thjfhup"><div class="h10l6u5c psmj6sh c1ao5210"><div class="t1295uka t1k6az3b">Design</div><div class="fpc582v" style="min-width: 8px; min-height: 8px;"></div><div class="h161tq0v"><div class="hsz4dac" aria-label="Add design page"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><path fill="currentColor" d="M4 .75a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-1.5 0Z"></path><path fill="currentColor" d="M0 4.75A.75.75 0 0 1 .75 4h8a.75.75 0 0 1 0 1.5h-8A.75.75 0 0 1 0 4.75Z"></path></svg></div></div></div></div><div class="thjfhup"><div class="h10l6u5c psmj6sh c1ao5210"><div class="t1295uka t1k6az3b">Pages</div><div class="fpc582v" style="min-width: 8px; min-height: 8px;"></div><div class="h161tq0v"><div class="hsz4dac" aria-label="Add page"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><path fill="currentColor" d="M4 .75a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-1.5 0Z"></path><path fill="currentColor" d="M0 4.75A.75.75 0 0 1 .75 4h8a.75.75 0 0 1 0 1.5h-8A.75.75 0 0 1 0 4.75Z"></path></svg></div></div></div></div><div class="p1gjrh06 d1w15mfv"><div class="rxctvrg s19ww6iw"><div class="d78umqb"><div><div role="presentation" class="c97qmlw cimf5a8" data-testid="page-row" aria-selected="true" aria-expanded="false"><div class="co8xoxv"><div class="c1e76oam"></div><div class="i1gi2t9h iwhmypa c688seo"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><defs><clipPath id="home-page-icon-rhp"><path d="M.5 5.422c0-.9.404-1.752 1.1-2.322l2.5-2.046a3 3 0 0 1 3.8 0L10.4 3.1c.696.57 1.1 1.422 1.1 2.322V9a3 3 0 0 1-3 3h-5a3 3 0 0 1-3-3Z"></path></clipPath></defs><path d="M.5 5.422c0-.9.404-1.752 1.1-2.322l2.5-2.046a3 3 0 0 1 3.8 0L10.4 3.1c.696.57 1.1 1.422 1.1 2.322V9a3 3 0 0 1-3 3h-5a3 3 0 0 1-3-3Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#home-page-icon-rhp)"></path><path d="M6 10.5V8" fill="transparent" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="editing n17gpdk2 i3lf05q i1odo8pq"><span class="t3suiwm t1295uka">Home</span></div></div></div></div><div class="s1n8l1x5 c1yzp6zb s1vsxddg n61wj3j fzo8c5f d1obw38k" style="--shrink: 0; --gap: 0px;"><div class="dku72ki"></div><div class="dku72ki"></div><div class="dku72ki"></div></div></div></div></div></div></div><div draggable="false" class="resize-zone m1qod7cs" style="cursor: e-resize; position: absolute; top: 0px; bottom: 0px; right: -3px; width: 6px; z-index: 27; transform: translate3d(0px, 0px, 0px); opacity: 0.5;"></div></div></div><div class="c1o4y51r arpwu8w pp4nbmq" data-is-project-bar="true"><div class="s1n8l1x5 rr3s3mz c1arh7l2 n61wj3j fzo8c5f" style="--shrink: 0; --gap: 10px; padding-left: var(--framer-fresco-panelPadding-dimension, 10px);"><button class="b1rdbf0o b6dohbs b1tf8pua" aria-label="Back" type="button"><div class="s1n8l1x5 rr3s3mz c1arh7l2 n61wj3j c1pkeo8" style="--shrink: 0; --gap: 10px;"><span class="btiggqk"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" role="presentation"><path d="m6.75 1.5-2.793 2.793a1 1 0 0 0 0 1.414L6.75 8.5" fill="transparent" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="translate">Back</span></div></button><div class="s1n8l1x5 rr3s3mz c1arh7l2 n61wj3j fzo8c5f" style="--shrink: 0; --gap: 5px;"><div class="c10oic9s"><div role="button" class="c1mhlhgs e1b164do" aria-label="Reload"><div class="s1n8l1x5 rr3s3mz c1arh7l2 n61wj3j fzo8c5f" style="--shrink: 0; --gap: 8px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><title>Reload</title><path d="M11.25 9.25h5.5a.5.5 0 0 0 .5-.5v-5.5" fill="transparent" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.596 14.596a6.5 6.5 0 1 1 1.772-5.906" fill="transparent" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div></div><div class="c10oic9s"><div role="button" class="c1mhlhgs e1b164do" aria-label="Fullscreen"><div class="s1n8l1x5 rr3s3mz c1arh7l2 n61wj3j fzo8c5f" style="--shrink: 0; --gap: 8px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><title>Fullscreen</title><path d="M9.75 3.75h6a.5.5 0 0 1 .5.5v6" fill="transparent" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.25 16.25h-6a.5.5 0 0 1-.5-.5v-6" fill="transparent" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 16 16 4" fill="transparent" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div></div></div></div><div class="s1n8l1x5 rr3s3mz c1arh7l2 n61wj3j c1pkeo8 c1ji8r1y" style="--shrink: 0; --gap: var(--framer-fresco-inputSpacing-dimension, 10px);"><div class="s1n8l1x5 rr3s3mz c1arh7l2 n61wj3j c1pkeo8" style="--shrink: 0; --gap: 10px; pointer-events: auto;"><div class="imxswdu"><div class="ph6ilvd"><div class="d1l3kbul"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true"><path d="m1 2.75 2.293 2.293a1 1 0 0 0 1.414 0L7 2.75" fill="transparent" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><button type="button" class="p17vy09d pq239lh"><span class="t1295uka">Desktop</span></button></div><div class="i1ubxgci w10jibcp" draggable="false"><input type="text" class="tarvkue i1v4gay9 n1obifo6" name="nofill-cad64375f18c58" autocomplete="nope" autocorrect="off" spellcheck="false" data-1p-ignore="true" value="1200"><div draggable="false" class="n1dddmlm nxyxle6 t1k3kf4t m1qod7cs"><div class="t12ewooc ts5v59s"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="none"><path d="m1.5 5 1.875-1.5a1 1 0 0 1 1.25 0L6.5 5" fill="transparent" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="t12ewooc t9t1k6l"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="none"><path d="m1.5 5 1.875-1.5a1 1 0 0 1 1.25 0L6.5 5" fill="transparent" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><div class="i6l13uv">W</div></div><div class="i1ubxgci w10jibcp" draggable="false"><input type="text" class="tarvkue i1v4gay9 n1obifo6" name="nofill-7904deb544cf2" autocomplete="nope" autocorrect="off" spellcheck="false" data-1p-ignore="true" value="533"><div draggable="false" class="n1dddmlm nxyxle6 t1k3kf4t m1qod7cs"><div class="t12ewooc ts5v59s"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="none"><path d="m1.5 5 1.875-1.5a1 1 0 0 1 1.25 0L6.5 5" fill="transparent" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="t12ewooc t9t1k6l"><svg role="presentation" xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="none"><path d="m1.5 5 1.875-1.5a1 1 0 0 1 1.25 0L6.5 5" fill="transparent" stroke-width="1.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><div class="i6l13uv">H</div></div></div></div></div><div class="s1n8l1x5 rr3s3mz s1vsxddg n61wj3j f1sczk5f s1hqw1h1 r7t99wh" style="--shrink: 0; --gap: var(--framer-fresco-inputSpacing-dimension, 10px);"><div class="asxk117"><button class="b1rdbf0o b1imdzu7" type="button"><div><div class="l1l8om57 o1oziywj"><div class="a16903hn"><div class="aeycgb5 a1vkf5rv a1bxrn0q" style="--avatar-size: var(--framer-fresco-avatarSize-dimension, 30px); --avatar-shadow: var(--framer-fresco-avatarOverlap-shadow, 0px 0px 0px 1.5px var(--framer-fresco-panelBackground-color, #ffffff), inset 0 0 0 1px rgba(255, 255, 255, 0.05));"><span class="tin3qvp">RH</span></div></div></div></div></button></div><div class="c10oic9s"><button class="b1rdbf0o pamuuuh p1mwrmnm dnh6zv9 abq3k5g rj20bhq rg3kc3x" aria-label="Close preview" type="button" data-testid="projectbar-preview-button"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" aria-hidden="true"><path d="M6.522 2.863A1.5 1.5 0 0 0 4.25 4.149v9.702a1.5 1.5 0 0 0 2.272 1.286l8.084-4.851a1.5 1.5 0 0 0 0-2.572Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg></button></div><button class="b1rdbf0o pamuuuh p1mwrmnm dnh6zv9" type="button" id="toolbar-invite-button"><span class="translate">Invite</span></button><div><button class="b1rdbf0o b6dohbs pn3co68 p5s0l8l" aria-label="Publish" type="button" id="toolbar-publish-button"><div class="s1n8l1x5 rr3s3mz c1arh7l2 n61wj3j c1pkeo8" style="--shrink: 0; --gap: 8px;"><span class="translate">Publish</span></div></button></div></div></div><div class="pkl1u3r wxcte9l arpwu8w"><div class="f3a6bsw"><div class="blm2yka" style="background: var(--framer-fresco-canvasBackground-color, #eeeeee);"><div class="c1y4oj9c r1ij4rv5"><div class="s1n8l1x5 c1yzp6zb c1arh7l2 n61wj3j c1pkeo8 i22re6d" style="--shrink: 0; --gap: 0px; padding-top: 20px;"><div class="s1n8l1x5 rr3s3mz c1arh7l2 n61wj3j c1pkeo8" style="--shrink: 0; --gap: 0px; height: 533px; max-height: calc(100% - 25px); width: 100%; min-height: 100px; position: relative;"><div class="r1lh8oh8"><div draggable="false" class="rm7bfh1 cycho2l m1qod7cs"></div><div draggable="false" class="r75f24d m1qod7cs"><div class="rnk44v2"></div></div><div draggable="false" class="r1dszvl0 c1c93fyy m1qod7cs"></div></div><div class="s1n8l1x5 rr3s3mz c1arh7l2 n61wj3j c1pkeo8" id="fullsize-preview-container" style="--shrink: 0; --gap: 0px; height: 533px; width: 1200px; min-width: 320px; max-width: calc(100% - 50px); max-height: 100%; min-height: 100px; position: relative;"><button class="b1rdbf0o b6dohbs e1l73qz1" aria-label="Show interface" type="button">Show UI</button><div class="c1mg1z6z i1hpwtf0"><div style="display: flex; justify-content: center; align-items: center; height: 100%;"><div><div style="background-color: white;"><div class="i1a8t54c"><div class="i1ngcbb2 efx4tx1"><iframe src="https://project-mxctbzprlix7mgpjorfj.framercanvas.com/s/app.c142a8f6e3334df9ca2718d9f699f2e118d35774/preview-module.html?mode=light&amp;siteId=4cb1ac4a887bac6207c693e2191ff251cd83669854ca0e5acbeed21574b397bc#services=%7B%22api%22%3A%22https%3A%2F%2Fapi.framer.com%22%2C%22app%22%3A%22https%3A%2F%2Fframer.com%22%2C%22canvas%22%3A%22https%3A%2F%2Fproject-mxctbzprlix7mgpjorfj.framercanvas.com%22%2C%22events%22%3A%22https%3A%2F%2Fevents.framer.com%22%2C%22login%22%3A%22https%3A%2F%2Fframer.com%2Flogin%22%2C%22userContent%22%3A%22https%3A%2F%2Fframerusercontent.com%22%2C%22modulesCDN%22%3A%22https%3A%2F%2Fframerusercontent.com%2Fmodules%22%2C%22modulesShortLink%22%3A%22https%3A%2F%2Fframer.com%2Fm%22%2C%22previewDomain%22%3A%22framer.app%22%7D" data-testid="preview-iframe" allowfullscreen="" sandbox="allow-downloads allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-forms" allow="autoplay; ambient-light-sensor; accelerometer; camera; display-capture; encrypted-media; fullscreen; geolocation; gyroscope; magnetometer; microphone; midi; picture-in-picture; usb; xr-spatial-tracking; clipboard-read; clipboard-write" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: none; display: block; height: 100%; width: 100%;"></iframe></div></div></div></div></div></div></div><div class="r1lh8oh8"><div draggable="false" class="rm7bfh1 c1c93fyy m1qod7cs"></div><div draggable="false" class="r75f24d m1qod7cs"><div class="rnk44v2"></div></div><div draggable="false" class="r1dszvl0 cycho2l m1qod7cs"></div></div></div><div draggable="false" class="r1jbtcak m1qod7cs"><div class="r7w6jhd"></div></div></div></div></div></div></div><div class="wek7k3x"></div><div style=""></div><div role="presentation" class="t3iyy5 t1g0rfed dl45tov hjjujhd bw8gump" style="padding: 10px; --max-toasts: 3;"><div role="presentation" class="t17y8opq toaster-content a1vnoagw"></div></div></div></div></div></div></div></div><div class="wek7k3x"><div id="recaptcha-container" style="display: none;"><div class="grecaptcha-badge" data-style="inline" style="width: 256px; height: 60px; box-shadow: gray 0px 0px 5px;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-dz2jo1iduap7" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/enterprise/anchor?ar=2&amp;k=6LcRWAYqAAAAAO5gUOuCftzMzi6K1qwQJq5g3lxj&amp;co=aHR0cHM6Ly9mcmFtZXIuY29tOjQ0Mw..&amp;hl=en&amp;v=guXhH0v-XMxlzmbTwqkaT4i5&amp;size=invisible&amp;badge=inline&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=etedk39jl5a"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><div class="bzfgigp plqvl4o"><div class="spanner"></div></div></div><form style="display: none;"><input type="file" style="display: none;"></form></div>
+
+		
+		<!--
+
+
+-->
+
+
+	<script>
+		// Keep these keys in sync with DarkModeProvider.tsx
+		var userDarkMode = localStorage.getItem("dark-mode") === "true"
+		var overrideSystem = localStorage.getItem("dark-mode-override-system") === "true"
+		var systemDarkMode = matchMedia("(prefers-color-scheme: dark)").matches
+		var isDarkMode = overrideSystem ? userDarkMode : systemDarkMode
+		if (isDarkMode) {
+			document.body.classList.add("framer-theme-dark")
+		}
+
+		// Set release channel as class on body.
+		var framerReleaseChannel = window.framerRelease && window.framerRelease.channel
+		if (framerReleaseChannel) {
+			document.body.classList.add("framer-release-" + framerReleaseChannel)
+		}
+
+	</script>
+
+
+
+		
+			<script src="/s/app.c142a8f6e3334df9ca2718d9f699f2e118d35774/scripts/react/react.production.min.js"></script>
+<script src="/s/app.c142a8f6e3334df9ca2718d9f699f2e118d35774/scripts/react-dom/react-dom.production.min.js"></script>
+<script src="/s/app.c142a8f6e3334df9ca2718d9f699f2e118d35774/scripts/react-dom/react-dom-server-legacy.browser.production.min.js"></script>
+		
+
+		
+		
+		
+		<script>
+			window.exportAssets = Object.freeze({
+				library: "https://app.framerstatic.com/framer.M55KQT4O.mjs",
+				framerMotion: "https://app.framerstatic.com/framer-motion.7WISRKWG.mjs",
+			})
+		</script>
+
+		
+		<script src="assets/js/web.2PHO2L7P.mjs" type="module"></script>
+	
+
+<script type="text/javascript" id="" charset="">(function(){var a=document.createElement("script");a.type="text/javascript";a.src="assets/js/crypto-js.min.js";a.integrity="sha256-6rXZCnFzbyZ685/fMsqoxxZz/QZwMnmwHg+SsNe+C/w\x3d";a.crossOrigin="anonymous";document.getElementsByTagName("head")[0].appendChild(a)})();</script>    <script type="text/javascript" id="" charset="">(function(c,a){var e="podscribe-capture",d="script",b=a.createElement(d);b.id=e;b.async=!0;b.src="assets/js/tag.js";a=a.getElementsByTagName(d)[0];a.parentNode.insertBefore(b,a);b.addEventListener("load",function(){c.podscribe("init",{user_id:"9428f4d8-9061-7038-4333-e6338026449c",advertiser:"framer"});c.podscribe("view",{device_id:"17911990533340.36041796525760483"})})})(window,document);</script><script type="text/javascript" id="" charset="">(function(){var c=google_tag_manager["rm"]["203949713"](6);if(c){var d="aspire_transaction_id",a=30,b=new Date;b.setTime(b.getTime()+a*24*60*60*1E3);a="expires\x3d"+b.toUTCString();document.cookie=d+"\x3d"+encodeURIComponent(c)+";"+a+";path\x3d/"}})();</script><script type="text/javascript" id="" charset="">(function(){var a=new URLSearchParams(window.location.search);if(a=a.get("li_fat_id")){a=a.replace(/[;\s]/g,"");var b=new Date;b.setTime(b.getTime()+7776E6);document.cookie="li_fat_id\x3d"+a+"; path\x3d/; domain\x3d.framer.com; max-age\x3d7776000; SameSite\x3dLax; Secure"}})();</script><div id="drag-overlay" style="position: absolute; z-index: 1000000; inset: 0px; display: none;"></div><script type="text/javascript" id="" charset="">var USER_COOKIE_NAME="user_id";function setCookie(a,b,c){a=encodeURIComponent(a)+"\x3d"+encodeURIComponent(b)+";path\x3d/";b=new Date;b.setTime(b.getTime()+84E4);a+=";expires\x3d"+b.toUTCString();a+=";secure";a+=";domain\x3dframer.com";return document.cookie=a}function getCookie(a){return(a=document.cookie.match("(^|;) ?"+a+"\x3d([^;]*)(;|$)"))?a[2]:null}var user_id=google_tag_manager["rm"]["203949713"](15);setCookie(USER_COOKIE_NAME,user_id);</script><script type="text/javascript" id="" charset="">(function(){var e=function(a){return(a=document.cookie.match("(^|;) ?"+a+"\x3d([^;]*)(;|$)"))?a[2]:null},b=function(a){var c=new URLSearchParams(window.location.search);return c.get(a)},g=function(){var a=function(){return Math.floor((1+Math.random())*65536).toString(16).substring(1)};return a()+a()+"-"+a()+"-"+a()+"-"+a()+"-"+a()+a()+a()},f=function(a){var c=new XMLHttpRequest;c.open("POST","https://events.framer.com/track");c.setRequestHeader("Content-Type","application/json");a=[{source:"framer.site",
+timestamp:Date.now(),data:{type:"track",uuid:g(),context:{userId:a||null,visitorId:google_tag_manager["rm"]["203949713"](16),width:window.innerWidth||null,height:window.innerHeight||null,abTests:null},event:"ad_pixel_log",fbp:google_tag_manager["rm"]["203949713"](17),fbc:google_tag_manager["rm"]["203949713"](18),fbclid:b("fbclid"),gclid:google_tag_manager["rm"]["203949713"](20)||null,gbraid:b("gbraid"),wbraid:b("wbraid"),dclid:b("dclid"),gclsrc:b("gclsrc"),msclkid:e("_uetmsclkid")||b("msclkid"),ttclid:b("ttclid"),ttp:google_tag_manager["rm"]["203949713"](21),li_fat_id:google_tag_manager["rm"]["203949713"](22),twclid:b("twclid"),
+rdt_cid:b("rdt_cid"),rdt_uuid:e("_rdt_uuid"),sccid:b("ScCid")||b("sccid"),scid:e("_scid"),epik:e("_epik")||b("epik"),visitor_id:google_tag_manager["rm"]["203949713"](23),user_id:a||null,trigger_type:"login",oai_did:null,additional_click_ids:null}}];c.send(JSON.stringify(a))},d=new XMLHttpRequest;d.open("GET","https://api.framer.com/auth/signin");d.withCredentials=!0;d.onload=function(){try{f(JSON.parse(d.responseText).userId||null)}catch(a){f(null)}};d.send()})();</script><iframe allow="autoplay; ambient-light-sensor; accelerometer; camera; display-capture; encrypted-media; fullscreen; geolocation; gyroscope; magnetometer; microphone; midi; picture-in-picture; usb; xr-spatial-tracking" src="https://project-mxctbzprlix7mgpjorfj.framercanvas.com/s/app.c142a8f6e3334df9ca2718d9f699f2e118d35774/canvas-sandbox.html#services=%7B%22api%22%3A%22https%3A%2F%2Fapi.framer.com%22%2C%22app%22%3A%22https%3A%2F%2Fframer.com%22%2C%22canvas%22%3A%22https%3A%2F%2Fproject-mxctbzprlix7mgpjorfj.framercanvas.com%22%2C%22events%22%3A%22https%3A%2F%2Fevents.framer.com%22%2C%22login%22%3A%22https%3A%2F%2Fframer.com%2Flogin%22%2C%22userContent%22%3A%22https%3A%2F%2Fframerusercontent.com%22%2C%22modulesCDN%22%3A%22https%3A%2F%2Fframerusercontent.com%2Fmodules%22%2C%22modulesShortLink%22%3A%22https%3A%2F%2Fframer.com%2Fm%22%2C%22previewDomain%22%3A%22framer.app%22%7D" tabindex="-1" data-testid="canvas-iframe" sandbox="allow-scripts allow-same-origin" style="display: block; height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; z-index: -1; pointer-events: none;"></iframe><img src="assets/images/image-1.co/1/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe><img src="assets/images/image-2.com/1/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><iframe style="display: none;"></iframe><img id="podscribe-request" alt="" aria-hidden="true" src="assets/images/image-3.com/tag" style="display: none;"><img src="assets/images/image-4.co/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-5.com/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-6.co/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-7.com/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-8.co/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-9.com/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-10.co/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-11.com/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-12.co/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-13.com/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-14.co/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-15.com/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-16.co/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-17.com/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-18.co/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-19.com/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-20.co/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-21.com/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-22.co/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-23.com/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-24.co/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"><img src="assets/images/image-25.com/i/adsct" height="1" width="1" fetchpriority="high" style="display: none;"></body></html>
